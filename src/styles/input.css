@@ -1,0 +1,8 @@
+.todo-input {
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding: 10px;
+}

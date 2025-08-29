@@ -1,0 +1,28 @@
+.todo-container {
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 40px;
+}
+
+.todo-text {
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delete-button {
+    border: none;
+    background-color: #dc3545;
+    width: 60px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
