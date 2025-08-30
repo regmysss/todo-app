@@ -1,5 +1,12 @@
-export const filterTodos = (todos, quary) => {
-    const quaryText = quary.toLowerCase();
+export const filterTodos = (todos, query) => {
+    const queryText = normalizeStr(query);
 
-    return todos.filter((todo) => todo.value.toLowerCase().includes(quaryText));
-}
+    if (!queryText) return todos;
+
+    return todos.filter(({ value }) => {
+        const todoText = normalizeStr(value);
+        return todoText.includes(queryText);
+    });
+};
+
+const normalizeStr = (str) => str.toLowerCase().replace(/\s+/g, "");
